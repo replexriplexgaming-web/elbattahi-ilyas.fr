@@ -1,1 +1,0 @@
-Remplacez 'photo-ilyas.svg' par votre photo personnelle en conservant le même nom de fichier pour l'afficher automatiquement dans le site.
