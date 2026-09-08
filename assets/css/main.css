@@ -3950,3 +3950,89 @@ input, select, textarea {
 			opacity: 1;
 			visibility: visible;
 		}
+
+/* ========================================================================
+   Responsive mobile improvements
+   ======================================================================== */
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+
+@media screen and (max-width: 736px) {
+  html { font-size: 15px; }
+  #wrapper { overflow-x: hidden; }
+  #header { min-height: 4rem; }
+  #header .logo { max-width: calc(100% - 4rem); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  #header .logo strong { font-size: 0.95rem; }
+  #header .logo span { display: none; }
+  #header nav { width: 3.8rem; }
+
+  #banner { padding: 5.5rem 0 2.5rem; }
+  #banner .inner { padding: 0 1.1rem; }
+  #banner h1 { font-size: clamp(2.1rem, 10vw, 3.2rem); line-height: 1; }
+  #banner .content p { font-size: 0.98rem; line-height: 1.65; }
+  .hero-actions { display: flex; flex-direction: column; width: 100%; }
+  .hero-actions li { width: 100%; margin: 0 0 0.75rem 0; }
+  .hero-actions .button { width: 100%; box-sizing: border-box; }
+
+  #main > section > .inner,
+  #contact > .inner,
+  #footer > .inner { padding-left: 1.1rem; padding-right: 1.1rem; }
+
+  .tiles article { min-height: 15rem; }
+  .tiles article .major { padding: 1.15rem; }
+  .tiles article h3 { font-size: 1.15rem; }
+  .tiles article p { font-size: 0.92rem; line-height: 1.55; }
+
+  .spotlights section { display: block; }
+  .spotlights section .image { display: block; width: 100%; min-height: 13rem; }
+  .spotlights section .image img { width: 100%; height: 13rem; object-fit: cover; }
+  .spotlights section .content { width: 100%; }
+  .spotlights section .content .inner { padding: 1.35rem 1.1rem 1.8rem; }
+  .spotlights section .content p { font-size: 0.94rem; line-height: 1.65; }
+
+  /* Compétences techniques : photos et textes empilés proprement */
+  #two.spotlights section { display: flex; flex-direction: column; }
+  #two.spotlights section .image { order: 0; }
+  #two.spotlights section .content { order: 1; }
+
+  /* Portfolio */
+  .portfolio-hero-grid-pro { grid-template-columns: 1fr !important; }
+  .portfolio-hero-pro { padding: 5.5rem 0 3.2rem; min-height: auto; }
+  .portfolio-hero-copy-pro h1 { max-width: none; font-size: clamp(2.35rem, 12vw, 3.4rem); }
+  .portfolio-lead-pro { font-size: 0.98rem; line-height: 1.7; }
+  .portfolio-proof-row-pro { grid-template-columns: 1fr !important; gap: 0.7rem; }
+  .portfolio-proof-row-pro div { padding: 0.9rem; }
+  .portfolio-project-grid-pro { grid-template-columns: 1fr !important; }
+  .project-card-featured-pro { grid-template-columns: 1fr !important; }
+  .project-media-pro, .project-media-pro img { min-height: 11rem; height: 11rem; }
+  .project-body-pro, .project-card-featured-pro .project-body-pro { padding: 1.25rem; }
+  .project-body-pro h3, .project-card-featured-pro .project-body-pro h3 { font-size: 1.45rem; }
+  .document-toolbar-pro { flex-direction: column; }
+  .document-search-pro, .document-search-pro input, .document-refresh-pro { width: 100%; box-sizing: border-box; }
+  .document-grid-pro { grid-template-columns: 1fr !important; }
+  .document-card-pro { min-width: 0; }
+  .toolbox-grid-pro { grid-template-columns: 1fr !important; gap: 1.5rem; }
+
+  /* Contact */
+  #contact .split { display: block; }
+  #contact .split > section { width: 100%; border-left: 0; border-top: 1px solid rgba(255,255,255,0.12); padding: 1.2rem 0; }
+  #contact .split > section:first-child { border-top: 0; }
+  .contact-method { text-align: left; }
+}
+
+@media screen and (max-width: 480px) {
+  html { font-size: 14px; }
+  #menu { padding: 1.25rem; }
+  #menu ul.links li a { font-size: 0.95rem; }
+  #banner h1 { font-size: 2.15rem; }
+  .portfolio-section-pro { padding: 2.8rem 0; }
+  .portfolio-section-heading-pro { margin-bottom: 1.6rem; }
+  .portfolio-section-heading-pro h2,
+  .toolbox-grid-pro h2,
+  .final-cta-box-pro h2 { font-size: 2rem; }
+  .portfolio-stack-pro span,
+  .project-tags-pro span,
+  .toolbox-list-pro span { font-size: 0.68rem; }
+  .document-card-pro { padding: 1.15rem; }
+  .document-card-pro h4 { font-size: 1rem; }
+}
