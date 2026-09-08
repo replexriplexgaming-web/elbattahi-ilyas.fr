@@ -92,8 +92,101 @@
 }
 
 /* ========================================================================
-   Nouvelle page portfolio professionnelle
+   Portfolio : même identité visuelle que le reste du site
    ======================================================================== */
+
+/* La structure professionnelle du portfolio est conservée, mais sa palette
+   ne surcharge plus le thème global du site. */
+body.portfolio-page {
+  background: transparent !important;
+}
+
+body.portfolio-page #wrapper,
+body.portfolio-page #main,
+body.portfolio-page .portfolio-main-pro,
+body.portfolio-page .portfolio-section-pro {
+  background: transparent !important;
+}
+
+body.portfolio-page #header {
+  background: transparent !important;
+  backdrop-filter: none !important;
+  border-bottom: 0 !important;
+}
+
+body.portfolio-page .portfolio-hero-pro,
+body.portfolio-page .portfolio-section-pro {
+  border-color: rgba(255,255,255,0.12) !important;
+}
+
+body.portfolio-page .portfolio-kicker-pro,
+body.portfolio-page .project-topline-pro,
+body.portfolio-page .method-card-pro span {
+  color: inherit !important;
+}
+
+body.portfolio-page .portfolio-kicker-pro::before {
+  background: currentColor !important;
+}
+
+body.portfolio-page .portfolio-lead-pro,
+body.portfolio-page .portfolio-panel-content-pro p,
+body.portfolio-page .portfolio-section-heading-pro p:not(.portfolio-kicker-pro),
+body.portfolio-page .toolbox-grid-pro p,
+body.portfolio-page .final-cta-box-pro p,
+body.portfolio-page .project-body-pro p,
+body.portfolio-page .project-body-pro li {
+  color: inherit !important;
+}
+
+body.portfolio-page .portfolio-proof-row-pro div,
+body.portfolio-page .portfolio-hero-panel-pro,
+body.portfolio-page .project-card-pro,
+body.portfolio-page .method-card-pro,
+body.portfolio-page .toolbox-list-pro,
+body.portfolio-page .final-cta-box-pro,
+body.portfolio-page .portfolio-status-pro,
+body.portfolio-page .portfolio-stack-pro span,
+body.portfolio-page .project-tags-pro span,
+body.portfolio-page .toolbox-list-pro span {
+  background: rgba(255,255,255,0.04) !important;
+  border-color: rgba(255,255,255,0.12) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+  color: inherit !important;
+}
+
+body.portfolio-page .portfolio-hero-panel-pro::before {
+  display: none !important;
+}
+
+body.portfolio-page .portfolio-hero-pro::before {
+  opacity: 0.35;
+}
+
+body.portfolio-page .portfolio-hero-pro::after {
+  color: rgba(255,255,255,0.03) !important;
+}
+
+body.portfolio-page .button.primary,
+body.portfolio-page input[type="submit"].primary,
+body.portfolio-page input[type="reset"].primary,
+body.portfolio-page input[type="button"].primary {
+  background: transparent !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+body.portfolio-page .button:hover {
+  box-shadow: none !important;
+}
+
+body.portfolio-page .project-card-pro:hover {
+  border-color: rgba(255,255,255,0.22) !important;
+  background: rgba(255,255,255,0.06) !important;
+}
+
+
 
 body.portfolio-page {
   background:
