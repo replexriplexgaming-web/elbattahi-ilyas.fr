@@ -4036,3 +4036,79 @@ body { overflow-x: hidden; }
   .document-card-pro { padding: 1.15rem; }
   .document-card-pro h4 { font-size: 1rem; }
 }
+
+
+/* ========================================================================
+   Mobile / touch layout override - compact and fully navigable
+   ======================================================================== */
+@media screen and (max-width: 736px) {
+  html, body { width: 100%; max-width: 100%; overflow-x: hidden !important; }
+  body { min-width: 0 !important; }
+  *, *::before, *::after { box-sizing: border-box; }
+  img, video, iframe, svg { max-width: 100%; height: auto; }
+
+  #wrapper, #main, section, .inner, .content, .spotlights, .tiles { width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+  .inner { margin: 0 auto !important; padding-left: 1rem !important; padding-right: 1rem !important; }
+
+  h1 { font-size: clamp(2rem, 9vw, 2.8rem) !important; line-height: 1.08 !important; }
+  h2 { font-size: clamp(1.65rem, 7vw, 2.2rem) !important; line-height: 1.15 !important; }
+  h3 { font-size: 1.2rem !important; }
+  p { font-size: 0.95rem; line-height: 1.6; }
+
+  #header { height: auto !important; min-height: 3.75rem !important; padding: 0 !important; }
+  #header .logo { display: block; min-width: 0; max-width: calc(100vw - 4rem); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  #header .logo strong { font-size: 0.9rem !important; }
+  #header nav { width: 3.5rem !important; }
+
+  #banner { min-height: auto !important; height: auto !important; padding: 5rem 0 2rem !important; }
+  #banner .inner { padding-left: 1rem !important; padding-right: 1rem !important; }
+  #banner .content { width: 100% !important; max-width: 100% !important; }
+  #banner .content p { max-width: 100% !important; }
+  .content { width: 100% !important; }
+  .content > * { max-width: 100% !important; }
+  .actions { flex-direction: column !important; align-items: stretch !important; width: 100% !important; }
+  .actions li { width: 100% !important; margin: 0 0 .7rem 0 !important; }
+  .actions .button { width: 100% !important; max-width: 100% !important; text-align: center; }
+
+  /* Compétences: image au-dessus, texte dessous, pleine largeur */
+  #two.spotlights { width: 100% !important; }
+  #two.spotlights section { display: flex !important; flex-direction: column !important; width: 100% !important; }
+  #two.spotlights section .image { position: static !important; width: 100% !important; height: 12rem !important; min-height: 12rem !important; }
+  #two.spotlights section .image img { width: 100% !important; height: 12rem !important; object-fit: cover !important; }
+  #two.spotlights section .content { width: 100% !important; }
+  #two.spotlights section .content .inner { padding: 1.2rem 1rem 1.6rem !important; }
+
+  /* Portfolio: une seule colonne et aucune largeur fixe */
+  .portfolio-hero-pro { width: 100% !important; min-height: auto !important; padding: 5rem 0 2.5rem !important; }
+  .portfolio-hero-grid-pro { display: block !important; width: 100% !important; }
+  .portfolio-hero-copy-pro { width: 100% !important; }
+  .portfolio-proof-row-pro { display: grid !important; grid-template-columns: 1fr !important; width: 100% !important; }
+  .portfolio-project-grid-pro { display: grid !important; grid-template-columns: 1fr !important; width: 100% !important; }
+  .project-card-pro, .project-card-featured-pro { display: block !important; width: 100% !important; grid-column: auto !important; }
+  .project-media-pro, .project-media-pro img { width: 100% !important; height: 10rem !important; min-height: 10rem !important; }
+  .project-body-pro, .project-card-featured-pro .project-body-pro { width: 100% !important; padding: 1.1rem !important; }
+  .document-toolbar-pro { display: flex !important; flex-direction: column !important; width: 100% !important; gap: .75rem; }
+  .document-search-pro, .document-search-pro input, .document-refresh-pro { width: 100% !important; }
+  .document-library-pro, .document-folder-pro, .document-grid-pro, .document-card-pro { width: 100% !important; max-width: 100% !important; min-width: 0 !important; }
+  .document-grid-pro { display: grid !important; grid-template-columns: 1fr !important; }
+  .document-card-pro { overflow: hidden; }
+  .document-card-pro p { overflow-wrap: anywhere !important; word-break: break-word !important; }
+
+  .toolbox-grid-pro { display: block !important; width: 100% !important; }
+  .toolbox-list-pro { width: 100% !important; }
+
+  #contact, #contact .inner, #contact .split { width: 100% !important; max-width: 100% !important; }
+  #contact .split { display: block !important; }
+  #contact .split > section { width: 100% !important; padding: 1rem 0 !important; }
+
+  #footer .inner { padding-left: 1rem !important; padding-right: 1rem !important; }
+}
+
+@media screen and (max-width: 420px) {
+  .inner { padding-left: .85rem !important; padding-right: .85rem !important; }
+  #header .logo strong { font-size: .82rem !important; }
+  #banner { padding-top: 4.6rem !important; }
+  .portfolio-hero-copy-pro h1 { font-size: 2.05rem !important; }
+  .portfolio-section-pro { padding: 2.5rem 0 !important; }
+  .document-card-pro h4 { overflow-wrap: anywhere !important; }
+}
