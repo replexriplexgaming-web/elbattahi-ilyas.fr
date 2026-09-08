@@ -4112,3 +4112,67 @@ body { overflow-x: hidden; }
   .portfolio-section-pro { padding: 2.5rem 0 !important; }
   .document-card-pro h4 { overflow-wrap: anywhere !important; }
 }
+
+
+/* Final mobile tuning: no zooming, no horizontal swipe, comfortable touch targets */
+@media screen and (max-width: 736px) {
+  body { font-size: 15px !important; }
+  #header { padding: 0 !important; }
+  #header .logo { max-width: calc(100vw - 4.25rem) !important; font-size: .85rem !important; }
+  #header .logo strong { font-size: .88rem !important; }
+  #header nav a { font-size: .72rem !important; }
+  #menu { width: min(18rem, 88vw) !important; }
+  #menu .links li a { padding: .65rem 0 !important; font-size: .9rem !important; }
+
+  #banner { padding: 4.5rem .85rem 1.5rem !important; }
+  #banner .inner { padding: 0 !important; }
+  #banner .major h1 { margin-bottom: 1rem !important; }
+  #banner .content p { font-size: .92rem !important; }
+
+  .inner { padding: 0 .85rem !important; }
+  section > .inner { padding-top: 2rem !important; padding-bottom: 2rem !important; }
+
+  .spotlights section .image,
+  .spotlights section .image img { height: 9rem !important; min-height: 9rem !important; }
+  .spotlights section .content .inner { padding: 1rem .85rem 1.25rem !important; }
+  .spotlights section .content h3 { font-size: 1.05rem !important; }
+  .spotlights section .content p { font-size: .88rem !important; }
+
+  .portfolio-hero-pro { padding: 4.6rem 0 2rem !important; }
+  .portfolio-hero-copy-pro h1 { font-size: 2rem !important; line-height: 1.05 !important; letter-spacing: -.04em !important; }
+  .portfolio-lead-pro { font-size: .9rem !important; line-height: 1.55 !important; }
+  .portfolio-actions-pro .button { min-height: 2.65rem !important; padding: .65rem .85rem !important; font-size: .78rem !important; }
+  .portfolio-proof-row-pro div { padding: .72rem .8rem !important; }
+  .portfolio-proof-row-pro strong { font-size: .95rem !important; }
+  .portfolio-proof-row-pro span { font-size: .75rem !important; }
+
+  .portfolio-section-heading-pro h2 { font-size: 1.8rem !important; }
+  .portfolio-section-heading-pro p { font-size: .88rem !important; }
+  .portfolio-project-grid-pro { gap: .85rem !important; }
+  .project-card-pro { border-radius: 1rem !important; }
+  .project-media-pro, .project-media-pro img { height: 8.5rem !important; min-height: 8.5rem !important; }
+  .project-body-pro, .project-card-featured-pro .project-body-pro { padding: 1rem !important; }
+  .project-body-pro h3, .project-card-featured-pro .project-body-pro h3 { font-size: 1.2rem !important; }
+  .project-body-pro p { font-size: .86rem !important; }
+  .project-tags-pro span, .toolbox-list-pro span { font-size: .62rem !important; min-height: 1.8rem !important; padding: .25rem .55rem !important; }
+
+  .document-toolbar-pro { gap: .55rem !important; }
+  .document-search-pro input { height: 2.7rem !important; font-size: .85rem !important; }
+  .document-refresh-pro { min-height: 2.7rem !important; font-size: .78rem !important; }
+  .document-card-pro { padding: .95rem !important; }
+  .document-card-pro h4 { font-size: .95rem !important; line-height: 1.2 !important; }
+  .document-card-pro p { font-size: .72rem !important; }
+  .document-card-pro .button { min-height: 2.5rem !important; font-size: .72rem !important; padding: .55rem .7rem !important; }
+
+  #contact .inner { padding-top: 1.5rem !important; padding-bottom: 1.5rem !important; }
+  .contact-method h3 { font-size: 1rem !important; }
+  .contact-method { font-size: .85rem !important; }
+
+  #footer .copyright { font-size: .7rem !important; }
+}
+@media screen and (max-width: 390px) {
+  #banner { padding-top: 4.3rem !important; }
+  .portfolio-hero-copy-pro h1 { font-size: 1.8rem !important; }
+  .portfolio-section-heading-pro h2 { font-size: 1.6rem !important; }
+  .spotlights section .image, .spotlights section .image img { height: 8rem !important; min-height: 8rem !important; }
+}
