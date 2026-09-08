@@ -4249,3 +4249,32 @@ body { overflow-x: hidden; }
   #main h2 { font-size: clamp(1.6rem, 7vw, 2.15rem) !important; }
   p { max-width: 100% !important; }
 }
+
+
+/* Keep the original visual blocks on mobile; only stack them vertically */
+@media screen and (max-width: 736px) {
+  #main > .tiles {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+  #main > .tiles > article {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 18rem !important;
+    height: 18rem !important;
+    margin: 0 !important;
+  }
+  #main > .tiles > article .image,
+  #main > .tiles > article .image img {
+    width: 100% !important;
+    height: 100% !important;
+  }
+  #main > .tiles > article > header {
+    padding: 1.1rem !important;
+  }
+
+  /* Preserve the original tile look instead of shrinking/rebuilding the cards */
+  #main > .tiles > article h3 { font-size: 1.15rem !important; }
+  #main > .tiles > article p { font-size: .9rem !important; }
+}
