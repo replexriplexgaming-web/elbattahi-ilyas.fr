@@ -1,0 +1,142 @@
+/* Portfolio palette: intentionally matches the Forty theme used by the rest of the site. */
+
+body.portfolio-page {
+  background: #242943 !important;
+  color: #ffffff !important;
+}
+
+body.portfolio-page #wrapper,
+body.portfolio-page #main,
+body.portfolio-page .portfolio-main-pro,
+body.portfolio-page .portfolio-section-pro,
+body.portfolio-page .portfolio-method-pro,
+body.portfolio-page .portfolio-final-cta-pro {
+  background: #242943 !important;
+  color: #ffffff !important;
+}
+
+body.portfolio-page #header {
+  background: #242943 !important;
+  border-bottom: 0 !important;
+  backdrop-filter: none !important;
+}
+
+body.portfolio-page #menu {
+  background: #242943 !important;
+}
+
+body.portfolio-page .portfolio-hero-pro {
+  background: #242943 !important;
+  border-bottom: 1px solid rgba(255,255,255,0.15) !important;
+}
+
+body.portfolio-page .portfolio-hero-pro::before {
+  background:
+    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(255,255,255,0.02) 1px, transparent 1px) !important;
+  opacity: 1 !important;
+}
+
+body.portfolio-page .portfolio-hero-pro::after {
+  color: rgba(255,255,255,0.025) !important;
+}
+
+body.portfolio-page .portfolio-kicker-pro,
+body.portfolio-page .project-topline-pro,
+body.portfolio-page .method-card-pro span {
+  color: #9bf1ff !important;
+}
+
+body.portfolio-page .portfolio-kicker-pro::before {
+  background: #9bf1ff !important;
+}
+
+body.portfolio-page .portfolio-lead-pro,
+body.portfolio-page .portfolio-panel-content-pro p,
+body.portfolio-page .portfolio-section-heading-pro p,
+body.portfolio-page .toolbox-grid-pro p,
+body.portfolio-page .final-cta-box-pro p,
+body.portfolio-page .project-body-pro p,
+body.portfolio-page .project-body-pro li,
+body.portfolio-page .portfolio-proof-row-pro span {
+  color: rgba(255,255,255,0.75) !important;
+}
+
+body.portfolio-page .portfolio-proof-row-pro div,
+body.portfolio-page .portfolio-hero-panel-pro,
+body.portfolio-page .project-card-pro,
+body.portfolio-page .method-card-pro,
+body.portfolio-page .toolbox-list-pro,
+body.portfolio-page .final-cta-box-pro {
+  background: rgba(255,255,255,0.035) !important;
+  border: 1px solid rgba(255,255,255,0.15) !important;
+  box-shadow: none !important;
+  backdrop-filter: none !important;
+}
+
+body.portfolio-page .portfolio-hero-panel-pro::before {
+  display: none !important;
+}
+
+body.portfolio-page .portfolio-avatar-wrap-pro,
+body.portfolio-page .project-media-pro {
+  background: rgba(255,255,255,0.05) !important;
+}
+
+body.portfolio-page .portfolio-status-pro,
+body.portfolio-page .portfolio-stack-pro span,
+body.portfolio-page .project-tags-pro span,
+body.portfolio-page .toolbox-list-pro span {
+  background: rgba(255,255,255,0.035) !important;
+  border-color: rgba(255,255,255,0.18) !important;
+  color: #ffffff !important;
+}
+
+body.portfolio-page .toolbox-list-pro span {
+  background: rgba(155,241,255,0.08) !important;
+}
+
+body.portfolio-page .portfolio-status-pro {
+  color: #9bf1ff !important;
+}
+
+body.portfolio-page .portfolio-proof-row-pro strong,
+body.portfolio-page .portfolio-section-heading-pro h2,
+body.portfolio-page .toolbox-grid-pro h2,
+body.portfolio-page .final-cta-box-pro h2,
+body.portfolio-page .project-body-pro h3,
+body.portfolio-page .portfolio-panel-content-pro h2 {
+  color: #ffffff !important;
+}
+
+/* Reuse the original Forty button appearance instead of the cyan/purple gradient. */
+body.portfolio-page .button.primary,
+body.portfolio-page input[type="submit"].primary,
+body.portfolio-page input[type="reset"].primary,
+body.portfolio-page input[type="button"].primary {
+  background: #ffffff !important;
+  color: #242943 !important;
+  box-shadow: none !important;
+}
+
+body.portfolio-page .button.primary:hover,
+body.portfolio-page .button:hover {
+  background: #ffffff !important;
+  color: #242943 !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+body.portfolio-page .project-card-pro:hover {
+  background: rgba(255,255,255,0.055) !important;
+  border-color: rgba(255,255,255,0.25) !important;
+}
+
+body.portfolio-page .portfolio-section-pro {
+  border-bottom: 1px solid rgba(255,255,255,0.12) !important;
+}
+
+body.portfolio-page #contact,
+body.portfolio-page #footer {
+  background: #242943 !important;
+}
